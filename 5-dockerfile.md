@@ -57,13 +57,19 @@ No olvides verificar en qué directorio se encuentra el archivo Dockerfile
 ```
 
 **¿Cuántos pasos se han ejecutado?**
+Se ejecutaron 5 pasos
 # RESPONDER 
 
 ### Inspeccionar la imagen creada
 # COMPLETAR CON UNA CAPTURA
+<img width="1157" height="395" alt="image" src="https://github.com/user-attachments/assets/64211f89-3849-4120-aadb-606c0de64d44" />
+
 
 **Modificar el archivo index.html para incluir su nombre y luego crear una nueva versión de la imagen anterior**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
+
+
+Fue mucho mas rapido ya que se reutilizo algunos aspectos guardados en el cache ya que solo se modifico la capa de html debido a que esta la opcion de -v COPY que nos permite reutilizar las capas anteriores
 
 ## Mecanismo de caché
 Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso de construcción y evitar la repetición de pasos que no han cambiado. Cada instrucción en un Dockerfile crea una capa en la imagen final. Docker intenta reutilizar las capas de una construcción anterior si no han cambiado, lo que reduce significativamente el tiempo de construcción.
@@ -79,15 +85,18 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 ```
 
 ### ¿Con que puerto host se está realizando el mapeo?
-# COMPLETAR CON LA RESPUESTA
+con el puerto 32768
 
 **¿Qué es una imagen huérfana?**
 # COMPLETAR CON LA RESPUESTA
+
+es una imagen que no tiene una etiqueta asociada y que normalmente queda como una capa intermedia sin nombre después de reconstruir una imagen.
 
 ### Identificar imágenes huérfanas
 ```
 docker images -f "dangling=true"
 ```
+
 
 ### Listar los IDS de las imágenes huérfanas
 ```
