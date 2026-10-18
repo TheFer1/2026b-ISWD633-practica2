@@ -10,7 +10,8 @@ Asignar núcleos de CPU específicos:
 ```
 
 **¿Como saber el numero de procesadores virtuales que tiene una máquina?**
-## COMPLETAR
+
+al acceder al administrador de tareas en el apartado de rendimiento al seleccionar CPU aparece el numero de procesadores o al utilizar el sigueinte comendo echo %NUMBER_OF_PROCESSORS%
 
 ## Ejemplos
 _Puedes copiar y ejecutar directamente cada uno de los comandos_
