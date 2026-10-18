@@ -1,3 +1,2 @@
 # COMPLETAR  
-Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
-Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+Aprendí a limitar el uso de memoria RAM, memoria swap y CPU de un contenedor mediante opciones como --memory, --memory-swap, --cpus y --cpuset-cpus. Esto permite controlar los recursos que utiliza cada aplicación y evitar que consuma demasiados recursos de la computadora. También comprendí como los  HEALTHCHECK permite comprobar si una aplicación dentro de un contenedor funciona correctamente y sobre todo entendí como  crear imágenes personalizadas mediante un archivo Dockerfile, utilizando instrucciones como FROM, RUN, COPY, EXPOSE y CMD. También a  utilizar la caché para acelerar la creación de nuevas versiones.
